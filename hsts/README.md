@@ -66,4 +66,4 @@ Observe credentials were intercepted in the `POST` request in the mitmproxy wind
 
 ## Fix
 
-PR url
+https://github.com/maximivanov/vulnerable-by-design/pull/1
