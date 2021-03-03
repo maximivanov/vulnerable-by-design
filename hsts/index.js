@@ -11,6 +11,7 @@ const httpsPort = 443
 const app = express()
     .use ((req, res, next) => {
         if (req.secure) {
+            res.setHeader('Strict-Transport-Security', 'max-age=600; includeSubDomains')
             next()
         } else {
             res.redirect(`https://${req.get('host')}${req.url}`)
